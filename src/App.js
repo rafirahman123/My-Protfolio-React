@@ -12,15 +12,17 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import ScrollToTop from "./components/ScrollToTop";
+import ContactMe from "./components/ContactMe";
+import Blogs from "./components/Blogs";
 
 function App() {
   const [load, upadateLoad] = useState(true);
-  
+
   useEffect(() => {
     const timer = setTimeout(() => {
       upadateLoad(false);
     }, 1200);
-    
+
     return () => clearTimeout(timer);
   }, []);
 
@@ -35,6 +37,8 @@ function App() {
           <Route path="/project" component={Projects} />
           <Route path="/about" component={About} />
           <Route path="/resume" component={Resume} />
+          <Route path="/contactMe" component={ContactMe} />
+          <Route path="/blogs" component={Blogs} />
         </Switch>
         <Footer />
       </div>

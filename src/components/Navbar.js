@@ -12,6 +12,7 @@ import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
+  AiOutlineContacts
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
@@ -40,7 +41,7 @@ function NavBar() {
       <Container>
         <Navbar.Brand href="/">
           <img src={logo} className="img-fluid logo " alt="brand" />
-          Rafi's Protfolio Website
+          Protfolio Website
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -90,6 +91,32 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/blogs"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineFundProjectionScreen
+                  style={{ marginBottom: "2px" }}
+                />{" "}
+                Blogs
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/contactMe"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineContacts
+                  style={{ marginBottom: "2px" }}
+                />{" "}
+                Contact Me
               </Nav.Link>
             </Nav.Item>
 
