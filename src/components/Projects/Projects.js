@@ -6,7 +6,7 @@ import Particle from "../Particle";
 import travel from "../../Assets/Projects/saintmartin.jpg";
 import health from "../../Assets/Projects/banner1.jpg";
 import car from "../../Assets/Projects/car-house.png";
-import clock from "../../Assets/Projects/logo.png";
+import ema from "../../Assets/Projects/Capture.PNG";
 import learn from "../../Assets/Projects/banner.jpg";
 
 function Projects() {
@@ -30,7 +30,9 @@ function Projects() {
                 This website has a functional admin panel with restricted access.
                 Only admin can access this section where admin can 1. add product, 2. delete
                 any existing product, 3. update the state of customers order."
-              link="https://github.com/rafirahman123/Autozon-car-selling-website-MERN-client"
+              link="https://autozon-vehicle.web.app/"
+              gitClientlink="https://github.com/rafirahman123/Autozon-car-selling-website-MERN-client"
+              gitServerlink="https://github.com/rafirahman123/Autozon-car-selling-website-MERN-server"
             />
           </Col>
 
@@ -40,17 +42,31 @@ function Projects() {
               isBlog={false}
               title="Dream Holidays"
               description="My Dream Holidays website is a tourism website.Which contains varietes tour package and we can book those package and aslo remove them or cancel them by login or registration on the website."
-              link="https://github.com/rafirahman123/Tourism-website-MERN-client"
+              link="https://tourism-booking.web.app/"
+              gitClientlink="https://github.com/rafirahman123/Tourism-website-MERN-client"
+              gitServerlink="https://github.com/rafirahman123/Tourism-website-MERN-server"
             />
           </Col>
 
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={ema}
+              isBlog={false}
+              title="Ema-john simple"
+              description="It's a simple e-commarce website.with products order functionality,review functionality,cancel order and finalize order."
+              link="https://ema-john-simple-4fd46.web.app/"
+              gitClientlink="https://github.com/rafirahman123/ema-john-simple"
+              gitServerlink="https://github.com/rafirahman123/ema-john-simple-server"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={health}
               isBlog={false}
               title="Heath-care-diagnostic-center"
               description=" There is a home page,doctors page,blog page,login and registration page • Private or Protected routing page are details and blogs also Dynamic Routing is Details page • There is login and resitration system with google authentication and email/password login"
-              link="https://github.com/rafirahman123/Healthcare-website-react"
+              link="https://health-care-diagnostic-center.web.app/"
+              gitClientlink="https://github.com/rafirahman123/Healthcare-website-react"
             />
           </Col>
 
@@ -60,19 +76,12 @@ function Projects() {
               isBlog={false}
               title="Online Course Center"
               description=" This is a Online based Skill development center • Here anyone can enrole their favourate course with resonable price • In Rafi's Dream Skill everyone can read & learn important topic also."
-              link="https://github.com/rafirahman123/Online-course-website-react"
+              link="https://online-course-center-react.netlify.app"
+              gitClientlink="https://github.com/rafirahman123/Online-course-website-react"
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={clock}
-              isBlog={false}
-              title="Ema-john simple"
-              description="It's a simple e-commarce website"
-              link="https://github.com/rafirahman123/ema-john-simple"
-            />
-          </Col>
+
         </Row>
       </Container>
     </Container>
